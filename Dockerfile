@@ -45,7 +45,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 #	for key in $GPG_KEYS; do \
 #		gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; \
 #	done
-ARG TOMCAT_VERSION=7.0.77
+ARG TOMCAT_VERSION=7.0.70
 ENV TOMCAT_MAJOR=7 TOMCAT_VERSION=${TOMCAT_VERSION}
 
 # https://issues.apache.org/jira/browse/INFRA-8753?focusedCommentId=14735394#comment-14735394
